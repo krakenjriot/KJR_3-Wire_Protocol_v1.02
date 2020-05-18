@@ -1,17 +1,17 @@
- /***
- *      _  ______      _    _  _______ _   _       _ ____      ___ ___ _____ 
- *     | |/ /  _ \    / \  | |/ / ____| \ | |     | |  _ \    |_ _/ _ \_   _|
- *     | ' /| |_) |  / _ \ | ' /|  _| |  \| |  _  | | |_) |    | | | | || |  
- *     | . \|  _ <  / ___ \| . \| |___| |\  | | |_| |  _ < _   | | |_| || |  
- *     |_|\_\_| \_\/_/   \_\_|\_\_____|_| \_|  \___/|_| \_(_) |___\___/ |_|  
- *     
- *                          KJR 3 WIRE PROTOCOL 
- *                       https://krakenjriot.tech/
- *                  https://internetofthingsbuilder.com/
- *                          funsideofwine@gmail.com   
- *
- *                  Copyright (c) 2020 Rolly Falco Villacacan 
- */
+ 
+       _  ______      _    _  _______ _   _       _ ____      ___ ___ _____ 
+      | |/ /  _ \    / \  | |/ / ____| \ | |     | |  _ \    |_ _/ _ \_   _|
+      | ' /| |_) |  / _ \ | ' /|  _| |  \| |  _  | | |_) |    | | | | || |  
+      | . \|  _ <  / ___ \| . \| |___| |\  | | |_| |  _ < _   | | |_| || |  
+      |_|\_\_| \_\/_/   \_\_|\_\_____|_| \_|  \___/|_| \_(_) |___\___/ |_|  
+      
+                           KJR 3 WIRE PROTOCOL 
+                        https://krakenjriot.tech/
+                   https://internetofthingsbuilder.com/
+                           funsideofwine@gmail.com   
+ 
+                   Copyright (c) 2020 Rolly Falco Villacacan 
+ 
  
  **KJR 3-Wire-Protocol**
  
