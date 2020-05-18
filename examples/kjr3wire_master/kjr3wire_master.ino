@@ -227,7 +227,7 @@
 			//you code here...
 			//you code here...
 				
-			//sample code
+			//sample code to light the LED at pin 9
 			digitalWrite(9, cached_str[2]=='0'?false:true);  
 
       Serial.print(F("serial_data_rcvd_from_slave["));  
