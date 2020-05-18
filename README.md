@@ -35,7 +35,7 @@
  
   **Sample Transmission for two nodes configurations** 
   
- <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol/blob/master/sample transmissions.PNG" width=800 />  
+ <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 />  
  
 **To get the latest updates and news, see below links**
 - Facebook Group: https://www.facebook.com/groups/krakenjr
