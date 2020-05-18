@@ -1,3 +1,18 @@
+ 
+       _  ______      _    _  _______ _   _       _ ____      ___ ___ _____ 
+      | |/ /  _ \    / \  | |/ / ____| \ | |     | |  _ \    |_ _/ _ \_   _|
+      | ' /| |_) |  / _ \ | ' /|  _| |  \| |  _  | | |_) |    | | | | || |  
+      | . \|  _ <  / ___ \| . \| |___| |\  | | |_| |  _ < _   | | |_| || |  
+      |_|\_\_| \_\/_/   \_\_|\_\_____|_| \_|  \___/|_| \_(_) |___\___/ |_|  
+      
+                           KJR 3 WIRE PROTOCOL 
+                        https://krakenjriot.tech/
+                   https://internetofthingsbuilder.com/
+                           funsideofwine@gmail.com   
+ 
+                   Copyright (c) 2020 Rolly Falco Villacacan 
+ 
+ 
  **KJR 3-Wire-Protocol**
  
  **The techinical aspect behind the inner working of the kjr-3-wire-protocol and why it works well!**
@@ -36,7 +51,33 @@
   **Sample Transmission for two nodes configurations** 
   
  <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 />  
- 
+
+
+**How to add "kjr3wire" repository as Arduino Library?**
+Follow below steps..
+- Download zip copy of the repository 
+*Clone or Download --> click Download ZIP
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 /> 
+
+
+- Save the file to your Arduino Library or (any folder will work just don't forget where it is) 
+*Click Save button to complete the download process
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 /> 
+
+- Open Arduino IDE
+*Click Sketch --> Include Library --> Add ZIP Library --> find the downloaded file
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 /> 
+
+- In the Arduino IDE
+*Click Sketch --> Include Library --> Add ZIP Library --> find the downloaded file, select and finally click Open to complete the import
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 /> 
+
+- In the Arduino IDE (COMPLETED!)
+To Test your first kjr3wire sketch, 
+*Click File --> Example --> and scroll below --> find the newly import library --> select the sample and compile
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 /> 
+
+
 **To get the latest updates and news, see below links**
 - Facebook Group: https://www.facebook.com/groups/krakenjr
 - Github: https://github.com/krakenjriot/
