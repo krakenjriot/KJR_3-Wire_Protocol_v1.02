@@ -230,7 +230,9 @@
 			//sample code
 			digitalWrite(9, cached_str[2]=='0'?false:true);  
 
-      Serial.print(F("serial_data_rcvd_from_slave: "));  
+      Serial.print(F("serial_data_rcvd_from_slave["));  
+      Serial.print(cached_str[2]);  
+      Serial.print(F("]: "));  
       Serial.println(cached_str);  
       
       //count cycles
