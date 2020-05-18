@@ -69,7 +69,7 @@ Follow below steps..
 <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/images/image3.PNG" width=800 /> 
 
 - In the Arduino IDE
-*Click Sketch --> Include Library --> Add ZIP Library --> find the downloaded file, select and finally click Open to complete the import
+*Find the downloaded file, select and finally click Open to complete the import
 <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/images/image4.PNG" width=800 /> 
 
 - In the Arduino IDE (COMPLETED!)
