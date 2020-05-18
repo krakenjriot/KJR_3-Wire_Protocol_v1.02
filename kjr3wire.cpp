@@ -117,19 +117,3 @@ uint8_t char2Int(char ch){
   if(bayte == 52) x = 4;  
   return x;
 }
-
-//********************** GENERATE UNIQUE ID **********************
-String get_id(){
-String id;
-#define SIGRD 5
-#if defined(SIGRD) || defined(RSIG)    
-    for (uint8_t i = 0; i < 5; i += 2) {
-        id += boot_signature_byte_get(i);
-    }
-    for (uint8_t i = 14; i < 24; i += 1) {
-        id += boot_signature_byte_get(i);
-    }
-    return id; 
-#endif
-}
-
