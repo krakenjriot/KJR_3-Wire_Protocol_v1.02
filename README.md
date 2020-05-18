@@ -48,25 +48,19 @@
  
  <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol/blob/master/sample_layout_connections.png" width=800 />  
  
-  **Sample Transmission for two nodes configurations** 
+  **Sample Transmission for two nodes configurations Fig.2** 
   
  <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 />  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ Fig.2
+.
+.
+.
+.
+.
+.
+.
+.
+.
 **How to add "kjr3wire" repository as Arduino Library?**
 Follow below steps..
 - Download zip copy of the repository 
