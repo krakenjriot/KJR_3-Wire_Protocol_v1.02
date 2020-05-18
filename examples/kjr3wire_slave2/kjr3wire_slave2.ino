@@ -35,10 +35,10 @@
  */
   //#include <avr/wdt.h>
   #include <kjr3wire.h>
-  #define SIGNAL_LINE 3 //3  
-  #define MASTER_LINE 4 //4
-  #define SLAVE_LINE  5 //5
-  #define LINE_ID '1'
+  #define SIGNAL_LINE 6 //3  
+  #define MASTER_LINE 7 //4
+  #define SLAVE_LINE  8 //5
+  #define LINE_ID '2'
 
   //byte MAX_NODES = 2; //Total Number of Slave Nodes
 
