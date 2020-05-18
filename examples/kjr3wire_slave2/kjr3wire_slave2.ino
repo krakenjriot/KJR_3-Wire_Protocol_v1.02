@@ -35,10 +35,10 @@
  */
   //#include <avr/wdt.h>
   #include <kjr3wire.h>
-  #define SIGNAL_LINE 6 //3  
-  #define MASTER_LINE 7 //4
-  #define SLAVE_LINE  8 //5
-  #define LINE_ID '2'
+  #define SIGNAL_LINE 3 //3  
+  #define MASTER_LINE 4 //4
+  #define SLAVE_LINE  5 //5
+  #define LINE_ID '1'
 
   //byte MAX_NODES = 2; //Total Number of Slave Nodes
 
@@ -226,6 +226,7 @@
       //sample code
       digitalWrite(9, cached_str[2]=='0'?false:true);  
 
+      
       Serial.print(F("serial_data_rcvd_from_master: "));  
       Serial.println(cached_str); 
       
