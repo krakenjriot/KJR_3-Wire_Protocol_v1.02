@@ -39,29 +39,25 @@
 	#define MASTER_LINE 4 //4
 	#define SLAVE_LINE  5 //5
 	#define LINE_ID '0'
+	#define INTERVAL 1000 // timer for 3-wires 	
+	
+	uint8_t MAX_NODES = 2; //Total Number of Slave Nodes
 
-	unsigned int MAX_NODES = 2; //Total Number of Slave Nodes
-
-	#define INTERVAL 1000 // timer for 3-wires 
-	unsigned long time_t = 0;
-
-	byte SIGNAL_LINE_STAT = 0;
-	bool startRecording = false; 
-
+	uint8_t SIGNAL_LINE_STAT = 0;	
+	uint8_t call_counter = 1; //slave number caller
+	
 	char concatenated_chars[130];  
-	//const char* data_to_send_to_slave;
+	char cached_str[240];    
+    char chx;	
 
 	bool init_t = true; // first statement get executed only once
+	bool startRecording = false; 
 
-	char cached_str[240];
-      unsigned long lapse;
-      char chx;
-
-	unsigned long ii = 0; 
+	unsigned long time_t = 0;
+	unsigned long lapse;
+	unsigned long ii = 0; 	
+	unsigned long count_cycle = 0;   
 	
-	uint8_t call_counter = 1; //slave number caller
-
-  unsigned long count_cycle = 0;             
 	//***************************** setup ********************************     
 	//***************************** setup ********************************     
 	//***************************** setup ********************************     

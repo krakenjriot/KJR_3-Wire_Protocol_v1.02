@@ -40,34 +40,25 @@
   #define SLAVE_LINE  5 //5
   #define LINE_ID '1'
 
-  //byte MAX_NODES = 2; //Total Number of Slave Nodes
+	const char * analog_input_data;
+	const char * digital_input_data;
+	const char * health_data;
 
-  //#define INTERVAL 10000 // timer for 3-wires 
-  //unsigned long time_t = 0;
+	uint8_t call_counter = 1; //slave number caller
+	
+	char concatenated_chars[240];  
+	char cached_str[240];    
+    char chx;	
 
-  bool SIGNAL_LINE_STAT = false;
-  bool startRecording = false; 
-
-  char concatenated_chars[240];  
-  //const char* data_to_send_to_slave;
-
-  bool init_t = true; // first statement get executed only once
-
-  char cached_str[70];
-  //char id_char_arr[64];  
-
-  long int ii = 0;
-  
-  uint8_t call_counter = 1; //slave number caller
-
-  bool itsforme = false;
-  bool goto_next = false;
-  //unsigned long count_cycle = 0;
-
-  const char * analog_input_data;
-  const char * digital_input_data;
-  const char * health_data;
-             
+	bool init_t = true; // first statement get executed only once
+	bool startRecording = false; 
+	bool itsforme = false;
+	bool goto_next = false;
+	bool SIGNAL_LINE_STAT = false;	
+	
+	unsigned long lapse;
+	unsigned long ii = 0; 	
+	
   //***************************** setup ********************************     
   //***************************** setup ********************************     
   //***************************** setup ********************************     
@@ -150,8 +141,8 @@
     //THEN HERE!
     if(SIGNAL_LINE_STAT)
     { 
-      unsigned long lapse = pulseIn(MASTER_LINE, HIGH);    
-      char chx = decode_lapse(lapse);
+      lapse = pulseIn(MASTER_LINE, HIGH);    
+      chx = decode_lapse(lapse);
       //Serial.println(chx);  
       if(chx == '{')
       {
