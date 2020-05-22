@@ -34,7 +34,7 @@
 *The flow of communication is pretty basic*
 1. the MASTER initiates the request by putting the SIGNAL LINE to HIGH
 2. when SIGNAL LINE went high all SLAVES listen
-3. the MASTER send a string of this format "1-xxxxx" or "2-xxxx" to the MASTER LINE (the number denotes the SLAVE ID the MASTER wants to communicate with)
+3. the MASTER send a string of this format "1,xxxxx" or "2,xxxx" to the MASTER LINE (the number denotes the SLAVE ID the MASTER wants to communicate with)
 4. All SLAVES receives the data
 5. the MASTER now will put the SIGNAL LINE to LOW, this signals all SLAVEs that they can send data now to MASTER to the SLAVE LINE.
 6. Only one SLAVE will respond, That one that matches the SLAVE ID the MASTER sent  "x-" 
