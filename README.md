@@ -25,11 +25,11 @@
  - Eliminated the distance limitations of common wire communication protocols (i.e. I2C, RS-232 (Serial), Parallel, & etc.)
  - Very easy to setup and implement
  - You can add as many slaves as you want as long as you can accept the added delays for each slaves as this protocol works on queue concept as well
+ - Immune to cross talk electromagnetic interference since its using low frequency transmission protocol
  
  **Disadvantages**
  - Slow transfer as this method of detection depends on the duration of the pulses
  - Voltage drop along the wires is directly proportional to the distance, if your project will require only few hundred meters that would not be an issue, if you wanted to implement this at a larger distances, you can still make this work, just keep and maintain the voltage at the recieving end at a allowable detection threshold, you can use an external power booster
- - Electromagnetic interference from nearby location can cause crosstalks and could cause inaccurate data, to avoid this you can use the twisted wires or ideally use network cable cat 5e or cat6 or higher version.
 
 *The flow of communication is pretty basic*
 1. the MASTER initiates the request by putting the SIGNAL LINE to HIGH
