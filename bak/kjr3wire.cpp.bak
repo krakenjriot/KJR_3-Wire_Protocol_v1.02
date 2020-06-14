@@ -71,10 +71,9 @@ void lit(uint8_t DATA_LINE, unsigned int duration)
   delay(3);
 }
 
-void encode_lapse(char concatenated_chars[320], uint8_t DATA_LINE)
+void encode_lapse(char concatenated_chars[240], uint8_t DATA_LINE)
 {
-  char arr[320];
-  //sprintf(arr,"%c%s%c%c%c",'{',concatenated_chars,',','}','\0');
+  char arr[240];
   sprintf(arr,"%c%s%c%c",'{',concatenated_chars,'}','\0');
   unsigned int x = 0;   
   while (arr[x] != '\0')
