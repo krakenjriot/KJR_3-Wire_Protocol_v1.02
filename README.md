@@ -54,18 +54,11 @@
  Fig.2
 </br>
 </br>
-[<img src="https://img.youtube.com/vi/FpUw7k21g34/maxresdefault.jpg" width="50%">](https://youtu.be/FpUw7k21g34)
 
-<iframe width="560" height="315"
-src="https://youtu.be/FpUw7k21g34" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+
+[![Demo Transmissions](https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/images/yt.PNG)](https://youtu.be/FpUw7k21g34 "Demo Transmissions")
 </br>
 </br>
-
-[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=StTqXEQ2l-Y)](https://youtu.be/FpUw7k21g34 "Everything Is AWESOME")
-
 
 **How to add "kjr3wire" repository as Arduino Library?**
 Follow below steps..
