@@ -40,6 +40,11 @@
 5. the MASTER now will put the SIGNAL LINE to LOW, this signals all SLAVEs that they can send data now to MASTER to the SLAVE LINE.
 6. Only one SLAVE will respond, That one that matches the SLAVE ID the MASTER sent  "x-" 
 
+*Encoding/Decoding Method*
+1. The sender (SLAVE) will place a voltage on the line, sustaining it for a duration equivalent to the character required, 
+- Ex. if slave wants to send a character/numeric "1", the slave will place the MASTER LINE to HIGH for a duration of 200 microseconds
+2. The reciever is listening to the line, if the line went HIGH it will measure the duration how long it went HIGH and based on the duration measured it translate it to the equivalent character/numeric value in the library.
+- Ex. MASTER listen to the SLAVE LINE, and capture a pulse sustained for a duration of 200 microseconds, translating the 250us is equivalent to character/numeric value of "2" in the library.
 
 **Note**
 - The current version has a 16 character sets only ( Dot { } 0 1 2 3 4 5 6 7 8 9 + - Comma ) feel free to add/modify the source code
