@@ -47,7 +47,7 @@
 - Ex. MASTER listen to the LINE, and capture a pulse sustained for a duration of 250 microseconds, translating the 250us is equivalent to value of "2" based on the 3wire protocol library.
 
 **Note**
-- The current version has a 17 character sets only ( Dot { } 0 1 2 3 4 5 6 7 8 9 + - Comma *) feel free to add/modify the source code
+- The current version has a 17 character sets only ( . { } 0 1 2 3 4 5 6 7 8 9 + - , *) feel free to add/modify the source code
 - Use COMMON GROUND LINE if you will be using a separate power source for each or one of your microcontroller
 
  **See below sample layout connections** 
