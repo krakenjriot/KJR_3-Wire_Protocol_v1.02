@@ -54,7 +54,7 @@
  Fig.2
 </br>
 </br>
-[![Watch the video] (https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)] (https://www.youtube.com/watch?v=FpUw7k21g34)
+[<img src="https://img.youtube.com/vi/FpUw7k21g34/maxresdefault.jpg" width="50%">](https://youtu.be/FpUw7k21g34)
 </br>
 </br>
 
