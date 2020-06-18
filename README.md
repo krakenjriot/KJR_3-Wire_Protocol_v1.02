@@ -54,6 +54,10 @@
  Fig.2
 </br>
 </br>
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+</br>
+</br>
+
 **How to add "kjr3wire" repository as Arduino Library?**
 Follow below steps..
 - Download zip copy of the repository 
