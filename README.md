@@ -11,7 +11,7 @@
                            funsideofwine@gmail.com   
  
                    Copyright (c) 2020 Rolly Falco Villacacan 
- 
+ **This protocol is unique, unlike any other currently implemented protocols (UARTS,SERIAL etc.) that uses BITs, The 3-Wire-Protocol is the only protocol that uses durations as data representation**
  
  **KJR 3-Wire-Protocol**
  
