@@ -43,7 +43,7 @@
 *Encoding/Decoding Method*
 1. (SENDING) The sender will place a voltage on the line, sustaining it for a duration equivalent to the character required, 
 - Ex. if SLAVE A need to send a value of "1", the SLAVE will place the LINE to HIGH for a duration of 200 microseconds ( 200us is equivalent to a value of "1" based on the 3wire protocol library)
-2. (RECIEVING) The reciever is listening to the line, if the line went HIGH it will measure the duration how long it went HIGH and based on the duration measured it translate it to the equivalent value based on the 3wire protocol library.
+2. (RECIEVING) The reciever is listening to the line, if the line went HIGH it will measure the duration how long it went HIGH and based on the duration measured it translate it to the equivalent value.
 - Ex. MASTER listen to the LINE, and capture a pulse sustained for a duration of 250 microseconds, translating the 250us is equivalent to value of "2" based on the 3wire protocol library.
 
 **Note**
