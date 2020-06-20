@@ -23,6 +23,7 @@
  - This works on Master / Slaves topoloy (The master will initiate the call to specific slaves and the slaves that was called will respond to the master in response)
  
  **Advantages**
+ - Reliable even at long distance
  - Eliminated the distance limitations of common wire communication protocols (i.e. I2C, RS-232 (Serial), Parallel, & etc.)
  - Very easy to setup and implement
  - You can add as many slaves as you want as long as you can accept the added delays for each slaves as this protocol works on queue concept as well
