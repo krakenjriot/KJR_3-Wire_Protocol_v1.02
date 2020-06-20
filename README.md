@@ -19,7 +19,7 @@
  **The techinical aspect behind the inner working of the kjr-3-wire-protocol and why it works well!**
  - It uses electrical energy pulses (pulse of certain duration)
  - Electrical energy travels at a constant speed no matter the medium (wire) resistance is
- - This protocol is similar to morse code, but using only a single beeps to represents a character
+ - This protocol is similar to morse code, but using only a single beep to represent a single character
  - This works on Master / Slaves topoloy (The master will initiate the call to specific slaves and the slaves that was called will respond to the master in return)
  
  **Advantages**
