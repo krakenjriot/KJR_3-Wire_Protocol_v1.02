@@ -20,7 +20,7 @@
  - It uses electrical energy pulses (pulse of certain duration)
  - Electrical energy travels at a constant speed no matter the medium (wire) resistance is
  - This protocol is similar to morse code, but using only a single beep to represent a single character
- - This works on Master / Slaves topoloy (The master will initiate the call to specific slaves and the slaves that was called will respond to the master in return)
+ - This works on Master / Slaves topoloy (The master will initiate the call to specific slaves and the slaves that was called will respond to the master in response)
  
  **Advantages**
  - Eliminated the distance limitations of common wire communication protocols (i.e. I2C, RS-232 (Serial), Parallel, & etc.)
