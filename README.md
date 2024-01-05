@@ -12,9 +12,6 @@
                  Created/Developed By Rolly Falco Villacacan
                    
                    
-Certainly! Here's the enhanced Markdown with the additional content:
-
-
 ## KJR 3-Wire-Protocol 🌐
 
 This protocol introduces a unique approach, distinct from existing implementations such as UART and SERIAL, by utilizing durations as data representation.
