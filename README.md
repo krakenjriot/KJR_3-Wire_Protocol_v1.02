@@ -36,7 +36,8 @@ The KJR 3-Wire-Protocol operates on the principle of electrical energy pulses, w
 ### Disadvantages ⚠️
 
 - **Slow Transfer Rate:** The method's detection speed depends on the duration of the pulses.
-- **Voltage Drop Along Wires:** Proportional to distance; mitigate by maintaining voltage at the receiving end or using an external power booster.
+- **Voltage Drop Along Wires:** Proportional to distance; mitigate by maintaining voltage at the receiving end or using an external power booster. However, it's worth noting that data reliability remains consistent even at distances up to 500 meters. This extended range is often more than sufficient, especially in scenarios such as farmhouses or industrial buildings, where distances typically don't exceed this threshold.
+
 
 ### Communication Flow 🔄
 
