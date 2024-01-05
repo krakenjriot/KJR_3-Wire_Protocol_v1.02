@@ -12,6 +12,9 @@
                  Created/Developed By Rolly Falco Villacacan
                    
                    
+Certainly! Here's the enhanced Markdown with the additional content:
+
+
 ## KJR 3-Wire-Protocol 🌐
 
 This protocol introduces a unique approach, distinct from existing implementations such as UART and SERIAL, by utilizing durations as data representation.
@@ -59,28 +62,22 @@ The KJR 3-Wire-Protocol operates on the principle of electrical energy pulses, w
 
 **GitHub Repository:** [KJR 3-Wire-Protocol](https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02) 📦
 
- **See below sample layout connections** 
- 
- <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol/blob/master/sample_layout_connections.png" width=800 />  
- 
-  **Sample Transmission for 1 master and two slave nodes @100meters Fig.2** 
-  
- <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 />  
- Fig.2
-</br>
-</br>
+**See below sample layout connections** 
 
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol/blob/master/sample_layout_connections.png" width=800 />  
+
+**Sample Transmission for 1 master and two slave nodes @100meters Fig.2** 
+
+<img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/SAMPLE_TRANSMISSION.PNG" width=800 />  
+*Fig.2*
 
 [![Demo Transmissions](https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/images/yt.PNG)](https://youtu.be/FpUw7k21g34 "Demo Transmissions")
-</br>
-</br>
 
 **How to add "kjr3wire" repository as Arduino Library?**
 Follow below steps..
 - Download zip copy of the repository 
 *Clone or Download --> click Download ZIP
 <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/images/image1.PNG" width=800 /> 
-
 
 - Save the file to your Arduino Library or (any folder will work just don't forget where it is) 
 *Click Save button to complete the download process
@@ -99,7 +96,7 @@ To Test your first kjr3wire sketch,
 *Click File --> Example --> and scroll below --> find the newly import library --> select the sample and compile
 <img src="https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02/blob/master/images/image5.PNG" width=800 /> 
 
-**Steps Finished
+**Steps Finished**
 
 
 **To get the latest updates and news, see below links**
