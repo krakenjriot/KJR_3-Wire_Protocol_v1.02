@@ -12,44 +12,52 @@
                  Created/Developed By Rolly Falco Villacacan
                    
                    
- **This protocol is unique, unlike any other currently implemented protocols (UARTS,SERIAL etc.) that uses BITs, The 3-Wire-Protocol is the only protocol that uses durations as data representation**
- 
- **KJR 3-Wire-Protocol**
- 
- **The techinical aspect behind the inner working of the kjr-3-wire-protocol and why it works well!**
- - It uses electrical energy pulses (pulse of certain duration)
- - Electrical energy travels at a constant speed no matter the medium (wire) resistance is
- - This protocol is similar to morse code, but using only a single beep to represent a single character
- - This works on Master / Slaves topoloy (The master will initiate the call to specific slaves and the slaves that was called will respond to the master in response)
- 
- **Advantages**
- - Reliable even at long distance (tested at 200meters transfer rate of 512 characters/second (512 beeps/sec) (Est. it can reach even upto 1024 beeps/sec)
- - Eliminated the distance limitations of common wire communication protocols (i.e. I2C, RS-232 (Serial), Parallel, & etc.)
- - Very easy to setup and implement
- - You can add as many slaves as you want as long as you can accept the added delays for each slaves as this protocol works on queue concept as well
- - Immune to cross talk electromagnetic interference since its using low frequency transmission protocol
- 
- **Disadvantages**
- - Slow transfer as this method of detection depends on the duration of the pulses
- - Voltage drop along the wires is directly proportional to the distance, if your project will require only few hundred meters that would not be an issue, if you wanted to implement this at a larger distances, you can still make this work, just keep and maintain the voltage at the recieving end at a allowable detection threshold, you can use an external power booster
+## KJR 3-Wire-Protocol 🌐
 
-*The flow of communication is pretty basic*
-1. the MASTER initiates the request by putting the SIGNAL LINE to HIGH
-2. when SIGNAL LINE went high all SLAVES listen
-3. the MASTER send a string of this format "1,xxxxx" or "2,xxxx" to the MASTER LINE (the number denotes the SLAVE ID the MASTER wants to communicate with)
-4. All SLAVES receives the data
-5. the MASTER now will put the SIGNAL LINE to LOW, this signals all SLAVEs that they can send data now to MASTER to the SLAVE LINE.
-6. Only one SLAVE will respond, That one that matches the SLAVE ID the MASTER sent  "x-" 
+This protocol introduces a unique approach, distinct from existing implementations such as UART and SERIAL, by utilizing durations as data representation.
 
-*Encoding/Decoding Method*
-1. (SENDING) The sender will place a voltage on the line, sustaining it for a duration equivalent to the character required, 
-- Ex. if SLAVE A need to send a value of "1", the SLAVE will place the LINE to HIGH for a duration of 200 microseconds ( 200us is equivalent to a value of "1" based on the 3wire protocol library)
-2. (RECIEVING) The reciever is listening to the line, if the line went HIGH it will measure the duration how long it went HIGH and based on the duration measured it translate it to the equivalent value.
-- Ex. MASTER listen to the LINE, and capture a pulse sustained for a duration of 250 microseconds, translating the 250us is equivalent to value of "2" based on the 3wire protocol library.
+### Technical Overview
 
-**Note**
-- The current version has a 17 character sets only ( . { } 0 1 2 3 4 5 6 7 8 9 + - , *) feel free to add/modify the source code
-- Use COMMON GROUND LINE if you will be using a separate power source for each or one of your microcontroller
+The KJR 3-Wire-Protocol operates on the principle of electrical energy pulses, with the following key attributes:
+
+- Electrical energy pulses of certain durations are employed.
+- Electrical energy travels at a constant speed regardless of wire resistance.
+- Similar to Morse code, using a single beep to represent a single character.
+- Utilizes a Master/Slaves topology, where the master initiates the call to specific slaves.
+
+### Advantages 🚀
+
+- **Reliable at Long Distances:** Tested at 200 meters with a transfer rate of 512 characters/second (can potentially reach up to 1024 beeps/second).
+- **Overcomes Distance Limitations:** Eliminates the distance limitations of common wire communication protocols (e.g., I2C, RS-232, Parallel).
+- **Easy Setup:** Very easy to set up and implement.
+- **Scalable:** Add as many slaves as needed, with the flexibility to accept added delays for each slave.
+- **Immune to Electromagnetic Interference:** Low-frequency transmission protocol mitigates cross-talk electromagnetic interference.
+
+### Disadvantages ⚠️
+
+- **Slow Transfer Rate:** The method's detection speed depends on the duration of the pulses.
+- **Voltage Drop Along Wires:** Proportional to distance; mitigate by maintaining voltage at the receiving end or using an external power booster.
+
+### Communication Flow 🔄
+
+1. The MASTER initiates the request by setting the SIGNAL LINE to HIGH.
+2. All SLAVES listen when the SIGNAL LINE is high.
+3. The MASTER sends a string with the format "1,xxxxx" or "2,xxxx" to the MASTER LINE (denoting the SLAVE ID the MASTER wants to communicate with).
+4. All SLAVES receive the data.
+5. The MASTER sets the SIGNAL LINE to LOW, signaling SLAVES that they can send data to the MASTER via the SLAVE LINE.
+6. Only one SLAVE responds, matching the SLAVE ID sent by the MASTER.
+
+### Encoding/Decoding Method 🧾
+
+- **Sending:** The sender places a voltage on the line, sustaining it for a duration equivalent to the required character.
+- **Receiving:** The receiver listens to the line, measures the duration of the high signal, and translates it to the equivalent value.
+
+### Note 📝
+
+- The current version supports 17 character sets only ( . { } 0 1 2 3 4 5 6 7 8 9 + - , *). Feel free to add/modify the source code.
+- Use a COMMON GROUND LINE if using a separate power source for each or one of your microcontrollers.
+
+**GitHub Repository:** [KJR 3-Wire-Protocol](https://github.com/krakenjriot/KJR_3-Wire_Protocol_v1.02) 📦
 
  **See below sample layout connections** 
  
@@ -97,5 +105,4 @@ To Test your first kjr3wire sketch,
 **To get the latest updates and news, see below links**
 - Facebook Group: https://www.facebook.com/groups/krakenjr
 - Github: https://github.com/krakenjriot/
-- Website: https://internetofthingsbuilder.com
-- Website: https://krakenjriot.tech
+
